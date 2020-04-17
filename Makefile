@@ -6,6 +6,7 @@ EXE = launcher.exe
 
 $(EXE): 
 	$(CC) $(CFLAGS) $(SRC) $(LIBS) -o $(EXE)
+	$(RM) a.out
 
 # Clean Up Objects, Exectuables, Dumps out of source directory
 clean:
