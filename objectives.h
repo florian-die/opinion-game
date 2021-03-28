@@ -3,10 +3,10 @@
 
 #include <stdbool.h> 
 
-const double UNIQUE_OBJECTIVE_CENTER;
-const double UNIQUE_OBJECTIVE_RADIUS;
+const extern double UNIQUE_OBJECTIVE_CENTER;
+const extern double UNIQUE_OBJECTIVE_RADIUS;
 
-bool GAME_WON;
+bool extern GAME_WON;
 
 void check_objectives();
 

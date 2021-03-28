@@ -5,11 +5,11 @@
 #include <stdbool.h> 
 
 // Game state
-bool GAME_PAUSED;
-bool QUIT;
+extern bool GAME_PAUSED;
+extern bool QUIT;
 
 // Generic SDL Event for PollEvent loop
-SDL_Event event;
+extern SDL_Event event;
 
 void handle_events();
 

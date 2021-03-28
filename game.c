@@ -12,6 +12,9 @@
 bool GAME_PAUSED = true; // Pause game if set to true
 bool QUIT = false; // Exit program if set to true
 
+// Generic SDL Event for PollEvent loop
+SDL_Event event;
+
 void handle_events()
 {
     if(event.type == SDL_QUIT)

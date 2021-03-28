@@ -3,24 +3,24 @@
 
 #include "state_list.h"
 
-const double FORWARD_TIME_STEP;
+const extern double FORWARD_TIME_STEP;
 
-const double PLAYER_INFLUENCE_GAIN;
-const double PLAYER_INFLUENCE_RANGE;
-const double AGENT_INFLUENCE_GAIN;
-const double AGENT_INFLUENCE_RANGE;
+const extern double PLAYER_INFLUENCE_GAIN;
+const extern double PLAYER_INFLUENCE_RANGE;
+const extern double AGENT_INFLUENCE_GAIN;
+const extern double AGENT_INFLUENCE_RANGE;
 
-const unsigned int NB_AGENTS;
+const extern unsigned int NB_AGENTS;
 const extern double INITIAL_STATE[];
 
-double current_player_speed;
-const double MAX_PLAYER_SPEED;
+extern double current_player_speed;
+const extern double MAX_PLAYER_SPEED;
 
-struct state_list_t * state_list;
+extern struct state_list_t * state_list;
 
 typedef double influence(double, double);
-influence* player_influence;
-influence* agent_influence;
+extern influence* player_influence;
+extern influence* agent_influence;
 
 // Non-const copy of initial state
 double* copy_initial_state();
