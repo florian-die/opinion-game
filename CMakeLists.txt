@@ -5,6 +5,7 @@ set(CMAKE_C_STANDARD 11)
 project(opinion-game)
 
 find_package(SDL2 REQUIRED)
+include_directories(${SDL2_INCLUDE_DIRS})
 
 add_executable(game main.c dynamics.c game.c objectives.c sdl_utils.c state_list.c trajectories.c)
 
